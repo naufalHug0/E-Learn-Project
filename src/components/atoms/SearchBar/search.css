@@ -1,0 +1,27 @@
+.form-search {
+    margin: 0 auto;
+    display: flex;
+    background-color: var(--white-color);
+    box-shadow: 0 0 10px 5px rgba(0,0,0,.2);
+    border-radius: 10px;
+    width: 70%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    color: rgba(0,0,0,.2);
+}
+
+#search-bar {
+    border: none;
+    width: 100%;
+}
+
+#search-bar:focus {
+    outline: none;
+}
+
+@media screen and (max-width: 350px) {
+    #search-bar {
+        font-size: .6rem;
+    }
+}

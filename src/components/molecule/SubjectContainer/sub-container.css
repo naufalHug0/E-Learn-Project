@@ -1,0 +1,16 @@
+.sub-container {
+    display: flex;
+    width: 90%;
+    padding: 40px 15px;
+    margin: auto;
+    gap: 20px;
+    overflow-x: scroll;
+}
+
+
+
+@media screen and (max-width: 400px) {
+    .sub-container {
+        width: 80%;
+    }
+}

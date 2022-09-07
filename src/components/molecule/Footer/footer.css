@@ -1,0 +1,44 @@
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 300px;
+    gap: 30px;
+}
+
+footer h1 span {color: var(--light-green)}
+
+.footer-social {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.footer-social__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,.2);
+    transition: all .5s;
+}
+
+.footer-social__icon:hover {
+    transform: translateY(-5px);
+}
+
+.footer-copy {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.6);
+}

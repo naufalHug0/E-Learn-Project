@@ -1,0 +1,14 @@
+.not-found {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.not-found h1 {
+    z-index: 99;
+    margin-top: 50px;
+}
