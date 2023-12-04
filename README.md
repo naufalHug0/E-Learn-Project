@@ -1,5 +1,7 @@
 ## This is E-Learn Project
 
+Frontend Webiste e-learning web dev UNJ IT EXPO Competition
+
 In the project directory, you can run:
 
 ### `npm start`
