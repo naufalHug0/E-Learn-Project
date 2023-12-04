@@ -1,0 +1,58 @@
+#dark .settings_pp {
+    background-color: white;
+}
+
+.settings_pp {
+    background-color: var(--main-color);
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--dark-green);
+    cursor: pointer;
+}
+
+.settings_pp >*{user-select: none;}
+
+.settings_pp #edit_pp {
+    position: absolute;
+    bottom: 0;
+    outline: none;
+    color: transparent;
+    left: 0;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    transition: .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.settings_pp:hover > #edit_pp{
+    background-color: rgba(0,0,0,.6);
+}
+
+.settings_pp #edit_pp::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+.settings_pp .edit-icon {
+    position: absolute;
+    color: white;
+    display: none;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.settings_pp .edit-icon p {line-height: 0;}
+
+.settings_pp:hover > .edit-icon {
+    display: flex;
+}

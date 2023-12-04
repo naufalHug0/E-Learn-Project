@@ -1,0 +1,22 @@
+.classes-item {
+    background-color: var(--light-blue);
+    border-radius: 20px;
+    padding: 10px 30px;
+    color: #256D85;
+    cursor: pointer;
+    user-select: none;
+}
+
+#dark .classes-item {
+    background-color: #22577A;
+    color: white;
+}
+
+.classes-item h2 {
+    margin-bottom: -10px;
+    font-size: 1.2rem;
+}
+
+.classes-item p {
+    font-size: .8rem;
+}

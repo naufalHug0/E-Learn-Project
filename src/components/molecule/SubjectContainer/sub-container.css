@@ -1,5 +1,6 @@
 .sub-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
     width: 90%;
     padding: 40px 15px;
     margin: auto;
@@ -7,10 +8,6 @@
     overflow-x: scroll;
 }
 
-
-
-@media screen and (max-width: 400px) {
-    .sub-container {
-        width: 80%;
-    }
+.sub-container:has(.skeleton) {
+    overflow: hidden;
 }

@@ -1,0 +1,23 @@
+.classes-page {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,minmax(1fr,max-content));
+    gap: 15px;
+    padding-bottom: 50px;
+}
+
+.classes-page #my-class {
+    color: var(--sec-color);
+}
+
+#dark .classes-page #my-class {
+    color: white;
+}
+
+
+@media screen and (max-width: 1025px) {
+    .classes-page {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,minmax(1fr,max-content));
+    }
+}

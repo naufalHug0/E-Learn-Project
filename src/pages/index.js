@@ -1,7 +1,8 @@
 import StartMenu from "./StartMenu";
-import Login from "./Login";
 import Home from "./Home";
 import NotFound from "./Not Found";
 import MainApp from "./MainApp";
+import Auth from "./Auth";
+import Account from "./Dashboard";
 
-export {StartMenu, Login, Home, NotFound, MainApp}
+export {StartMenu, Home, NotFound, MainApp, Auth, Account}

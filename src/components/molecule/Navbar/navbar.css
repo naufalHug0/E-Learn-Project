@@ -3,7 +3,7 @@ nav {
     top: 0;
     left: 0;
     right: 0;
-    height: 120px;
+    height: 80px;
     background-color: var(--main-color);
     padding:0 50px;
     display: grid;
@@ -15,7 +15,8 @@ nav {
 }
 
 .nav__brand {
-    font-size: 20px;
+    font-size: 16px;
+    cursor: pointer;
 }
 
 .nav__brand h1 span {
@@ -38,12 +39,12 @@ nav {
     justify-content: space-between;
     align-items: center;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .nav__acc-icon {
-    height: 60px;
-    width: 60px;
+    height: 40px;
+    width: 40px;
     background-color: white;
     color: var(--light-green);
     display: flex;
@@ -52,7 +53,7 @@ nav {
     font-weight: bold;
     border-radius: 50%;
     cursor: pointer;
-    font-size: 25px;
+    font-size: 16px;
 }
 
 .nav__theme-icon {
@@ -80,6 +81,28 @@ nav {
     display: none;
 }
 
+.acc-info {
+    position: fixed;
+    background-color: white;
+    box-shadow: 0 0 5px 2px rgba(0,0,0,.2);
+    top: 90px;
+    right: 50px;
+    width: 300px;
+    color: var(--dark-green);
+    height: 400px;
+    display: flex;
+    padding-top: 40px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 3px;
+}
+
+.acc-info__option p {
+    padding: 20px 30px;
+    cursor: pointer;
+    margin: 0;
+}
+
 @media screen and (max-width: 768px) {
     nav {
         padding: 0 30px;
@@ -96,6 +119,25 @@ nav {
     .nav-mobile {
         display: flex;
     }
+
+    .acc-info {
+        width: 90%;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: calc(85% - 405px);
+    }
+}
+
+@media screen and (max-height: 600px) {
+    .acc-info {
+        height: 340px;
+        top: calc(85% - 380px);
+    }
+    .acc-info__option p {
+        padding: 10px 30px;
+    }
+    
 }
 
 @media screen and (max-width: 375px) {
@@ -103,4 +145,39 @@ nav {
         width: 90%;
         padding: 0 35px;
     }
+}
+
+#dark .acc-info {
+    background-color: #3E5C6F;
+}
+
+.acc-info__profile {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: var(--light-green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.acc-info__option {
+    width: 100%;
+}
+
+#dark .acc-info h1  {
+    color: white;
+}
+
+.acc-info__option p:hover {
+    background-color: rgb(244,244,244);
+}
+
+#dark .acc-info__option p:hover {
+    background-color: #256D85;
+}
+
+.acc-info__profile h2, .nav__acc-icon, .acc-info>* {
+    user-select: none;
 }

@@ -1,0 +1,34 @@
+.auth-container {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.brand-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    background-color: var(--main-color);
+}
+
+.auth-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 640px) {
+    .brand-section {
+        display: none;
+    }
+    .auth-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .auth-section {
+        width: 100%;
+    }
+}

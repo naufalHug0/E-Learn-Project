@@ -2,13 +2,22 @@
     margin: 0 auto;
     display: flex;
     background-color: var(--white-color);
-    box-shadow: 0 0 10px 5px rgba(0,0,0,.2);
+    box-shadow: 0 0 5px 0px rgba(0,0,0,.2);
     border-radius: 10px;
     width: 70%;
     align-items: center;
     justify-content: space-between;
     padding: 15px 20px;
     color: rgba(0,0,0,.2);
+}
+
+#dark .form-search, #dark #search-bar {
+    background-color: #22587A;
+    color: #efefef;
+}
+
+#dark #search-bar::placeholder {
+    color: #efefef;
 }
 
 #search-bar {
@@ -20,8 +29,20 @@
     outline: none;
 }
 
+@media screen and (max-width: 576px) {
+    .form-search {
+        width: 90%;
+    }
+    .form-search svg {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 350px) {
-    #search-bar {
+    /* #search-bar {
         font-size: .6rem;
+    } */
+    .form-search svg {
+        display: none;
     }
 }

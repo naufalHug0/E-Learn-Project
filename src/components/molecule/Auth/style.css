@@ -1,0 +1,52 @@
+.login {
+    width: 60%;
+    text-align: left;
+}
+
+.login h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: var(--main-color);
+}
+
+.login input {
+    width: 100%;
+    outline: none;
+    border-width: 0 0 2px;
+    border-radius: 0;
+    padding-left: 0;
+    transition: all .2s;
+}
+
+.login input:focus {
+    border-color: var(--light-green);
+}
+
+.login button {
+    cursor: pointer;
+    width: 100%;
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.login #auth-link {
+    cursor: pointer;
+    text-decoration: underline;
+    color: var(--sec-color);
+}
+
+
+@media screen and (max-width: 840px){
+    .login {
+        width: 80%;
+    }
+    .login h1 {
+        font-size: 24px;
+    }
+}

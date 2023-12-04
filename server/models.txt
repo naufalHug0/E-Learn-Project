@@ -1,0 +1,39 @@
+db e-learn
+   - users
+   {
+    name,
+    username,
+    password,
+    profile_picture,
+    config : {
+        theme
+    }
+    classes_id,
+   }
+   
+   - subjects 
+   [
+    {
+        name,
+        icon,
+        id
+    }
+   ]
+
+   - contents
+   [{
+    title,
+    subject_id,
+    date,
+    thumbnail,
+    like : [user_id]
+    comments : [
+        {
+            body,
+            date,
+            user_id
+        }
+    ]
+   }]
+
+   - classes

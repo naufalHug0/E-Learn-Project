@@ -32,3 +32,14 @@
     transform: translateY(-10px);
     box-shadow: 0 0 30px 5px var(--dark-green);
 }
+
+@media screen and (max-width: 400px){
+    .start-page h1 {
+        font-size: 3.5rem;
+    }
+
+    .start-page button {
+        padding: 10px 25px;
+        font-size: 16px;
+    }
+}

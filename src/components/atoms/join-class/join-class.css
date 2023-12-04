@@ -1,0 +1,51 @@
+.join-class {
+    align-items: start;
+    background-color: white;
+    text-align: left;
+    width: 350px;
+    height: 200px;
+    padding: 25px;
+    color: var(--main-color);
+}
+
+.join-class .input-wrapper {
+    width: 100%;
+}
+.join-class .input-wrapper input {
+    width: 100%;
+    border-radius: 5px;
+    background: none;
+}
+
+.join-class .input-wrapper input:focus {
+    outline-color: var(--main-color);
+}
+
+.join-class .input-wrapper p {
+    font-size: 14px;
+    line-height: 15px;
+}
+
+.join-class .join-class-btns {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.join-class .join-class-btns button {
+    border: none;
+    padding:8px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.join-class .join-class-btns button:nth-child(1) {
+    background-color: var(--main-color);
+    color: white;
+}
+
+.join-class #err {
+    color: red;
+    font-size: 10px;
+    line-height: 0;
+}

@@ -1,0 +1,71 @@
+#dark .settings-page h2 {
+    color: var(--light-green);
+}
+
+#dark .settings-page .input-wrapper .label,
+#dark .settings-page .edit-profile .input-wrapper input, 
+#dark .settings-page .pass-profile .input-wrapper input
+{
+    color: white;
+}
+
+#dark .settings-page .input-wrapper input::placeholder {
+    color: rgba(255,255,255,.4);
+}
+
+.settings-page {
+    padding-bottom: 40px;
+}
+
+.settings-page .input-wrapper input {
+    width: 40%;
+    outline: none;
+    transition: all .2s;
+}
+
+.settings-page .edit-profile .input-wrapper input {
+    background: none;
+    border: 2px solid rgba(0, 0, 0, .2);
+    border-radius: 5px;
+}
+
+.settings-page .edit-profile .input-wrapper input:focus {
+    border-color: var(--light-green);
+}
+
+.settings-page .pass-profile .input-wrapper input {
+    border-radius: 0;
+    background: none;
+    border-width: 0 0 2px;
+    padding-left: 0;
+}
+
+.settings-page .pass-profile .input-wrapper input:focus {
+    border-color: var(--light-green);
+}
+
+.settings-page .settings-wrapper {
+    display: grid;
+    margin-bottom: 25px;
+}
+
+@media screen and (max-width:1080px) {
+    .settings-page .input-wrapper input {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .settings-page .input-wrapper input {
+        width: 100%;
+    }
+
+    .settings-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .settings-wrapper .settings_pp {
+        justify-self: center;
+    }
+}

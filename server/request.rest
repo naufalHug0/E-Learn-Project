@@ -1,0 +1,34 @@
+POST http://localhost:4000/v1/auth/register
+Content-Type: application/json
+
+{
+    "name":"Naufal",
+    "username":"nha",
+    "password":"pass"
+}
+
+###
+
+POST http://localhost:4000/v1/auth/login
+Content-Type: application/json
+
+{
+    "username":"admin",
+    "password":"admin"
+}
+
+###
+
+GET http://localhost:4000/v1/auth/token
+
+###
+
+GET http://localhost:4000/v1/auth/logout
+
+###
+GET http://localhost:4000/v1/auth/user/6354ca1857cdda5af8e289b2
+
+###
+
+GET http://localhost:4000/v1/learning/videos
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNTRjYTE4NTdjZGRhNWFmOGUyODliMiIsIm5hbWUiOiJhZG1pbiIsInVzZXJuYW1lIjoiYWRtaW4iLCJpYXQiOjE2NjcwNDA3MjQsImV4cCI6MTY2NzA0MDc0NH0.2AJMDZYHbf2955tc-FrC086T3F7ZAgpMB3xxB6xGUQw

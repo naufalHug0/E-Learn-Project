@@ -1,0 +1,59 @@
+.classes-wrapper {
+    grid-row: 1;
+}
+.classes {
+    display: grid;
+    width: 600px;
+    gap: 20px;
+    grid-template-rows: repeat(minmax(100px,130px),auto-fit);
+}
+
+.classes #not-joined {
+    line-height: 5px;
+}
+
+.classes-btn {
+    display: flex;
+    gap: 20px;
+}
+
+.classes-btn h3 {
+    font-size: 1rem;
+}
+
+.classes-btn .join-btn, 
+.classes-btn .see-more-btn {
+    padding: 0 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.classes-btn .join-btn {
+    background-color: var(--light-green);
+    color: white;
+    width: 70%;
+}
+
+.classes-btn .see-more-btn {
+    width: 30%;
+    background-color: var(--light-blue);
+    color: var(--main-color);
+}
+
+@media screen and (max-width: 1025px) {
+    .classes-wrapper {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .classes {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .classes-btn {
+        gap: 10px;
+    }
+}

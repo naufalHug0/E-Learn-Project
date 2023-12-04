@@ -1,0 +1,36 @@
+.account {
+    margin: 0;
+}
+
+.acc-header {
+    background-color: var(--main-color);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 80px;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 12px;    
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,.1);
+    z-index: 99;
+}
+
+.acc-header h1 {
+    user-select: none;
+}
+
+.acc-header h1 span{
+    color: var(--light-green);
+}
+
+.acc-header .ham-icon {
+    cursor: pointer;
+}
+
+.account-page {
+    width: 90%;
+    margin: 0 auto;
+}

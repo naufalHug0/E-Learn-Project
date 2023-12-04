@@ -1,3 +1,7 @@
-body {
+#light .home-page {
     background-color: var(--light-blue);
+}
+
+.home-page {
+    padding: 150px 0 50px 0;
 }

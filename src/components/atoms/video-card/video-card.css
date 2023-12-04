@@ -5,22 +5,38 @@
     border-radius: 20px;
     height: 300px;
     grid-template-rows: 3fr 1fr;
-    box-shadow: 0 0 10px 5px rgba(0,0,0,.2);
+    box-shadow: 0 0 8px 3px rgba(0,0,0,.2);
     cursor: pointer;
     transition: all .3s;
 }
 
-.video-card:hover {
+#dark .video-card.skeleton,
+.video-card.skeleton {
+    background-color: rgba(177, 177, 177, 0.2);
+    box-shadow: none;
+    height: 250px;
+}
+
+#dark .video-card {
+    background-color: #22577A;
+    color: #efefef;
+}
+
+#dark .video-card p {
+    color: #A5A5A5;
+}
+
+.video-card-loaded:hover {
     transform: scale(1.03);
 }
 
 .video-card__desc {
-    padding: 10px 20px;
+    padding: 10px 15px;
 }
 
 .video-card__desc h1 {
     line-height: 25px;
-    font-size: 24px;
+    font-size: 16px;
 }
 
 .video-card__desc p {

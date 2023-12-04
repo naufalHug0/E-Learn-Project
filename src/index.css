@@ -12,6 +12,7 @@
 *,*::after,*::before {
   box-sizing: border-box;
   font-family: 'Poppins',sans-serif;
+  transition: background .3s;
 }
 
 body {
@@ -20,7 +21,7 @@ body {
   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  min-height: 100vh;
+  overflow-x: hidden;
 }
 
 li {
@@ -33,4 +34,22 @@ li {
 
 .logo span {
   color: var(--light-green);
+}
+
+body:has(#dark) {
+  background-color: #223A54;
+}
+
+/* body:has(#light) {
+  background-color: var(--light-blue);
+} */
+
+#dark {
+  background-color: #223A54;
+  min-height: 100vh;
+}
+
+#light {
+  background-color: var(--light-blue);
+  min-height: 100vh;
 }

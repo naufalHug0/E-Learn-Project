@@ -1,0 +1,55 @@
+===================== Standar API =====================
+
+{root.api}/v1/{grouping}/{endpoint}
+SAMPLE :
+mern.com/v1/auth/login
+
+===================== Standar Status Response =====================
+200 : OK -> Call API Success
+201 : Created -> Post Success
+400 : Bad Request -> Error on client side (wrong input)
+401 : Unauthorized -> User is not authorized to the request
+403 : Forbidden -> User not allowed to access
+404 : Not Found -> Request endpoint not found
+500 : Internal Server Error ->Error on server side
+502 : Bad Gateway -> invalid response from another request
+
+===================== GROUPING =====================
+{
+        GROUP : Learning
+
+        [1] - Subjects
+
+        get all subjects
+        {root.api}/v1/learning/subjects
+        res : [{name, icon, id} ...]
+        
+        get subject by id
+        {root.api}/v1/learning/subject/:id
+        res : {name, icon, id}
+        err :
+            404 -> subject not found
+
+        [2] - videos
+
+        get all videos
+        {root.api}/v1/learning/videos
+        get video by id 
+        {root.api}/v1/learning/video/:id
+        res : [{
+            title,
+            subject_id,
+            date,
+            thumbnail,
+            like : [user_id]
+            comments : [
+                {
+                    body,
+                    date,
+                    user_id
+                }
+            ]
+        }]
+
+        
+}

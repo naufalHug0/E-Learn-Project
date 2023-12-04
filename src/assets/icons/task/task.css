@@ -1,0 +1,31 @@
+.task__icon-wrapper {
+    background-color: #D0FFF4;
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.task__icon {
+    background-color: #256D85;
+    border-radius: 5px;
+    width: 30px;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 8px 5px;
+}
+
+.task__icon span {
+    background-color: #D9D9D9;
+    border-radius: 6px;
+    height: 3px;
+    width: 100%;
+}
+
+.task__icon span:nth-child(3) {
+    width: 50%;
+}

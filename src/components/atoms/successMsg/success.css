@@ -1,0 +1,38 @@
+.success-msg,
+.prompt {
+    position: fixed;
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 3px;
+    width: 400px;
+    height: 300px;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 0;
+    background-color: white;
+    text-align: center;
+}
+
+.success-msg h2 {color: var(--main-color);line-height: 10px;}
+
+.success-msg .success-btn {
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px;
+    width: 80%;
+}
+
+@media screen and (max-width: 450px) {
+    .success-msg {
+        width: 90%;
+        padding: 20px;
+    }
+    .success-msg h2 {font-size: 20px;}
+    .success-msg p {font-size: 14px;}
+}
